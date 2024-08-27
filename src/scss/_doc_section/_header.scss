@@ -1,0 +1,89 @@
+.header {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+	}
+
+	&__nav {
+		display: flex;
+		flex: 1;
+		justify-content: end;
+		margin-right: 20px;
+
+		@include respond-to(tablet) {
+			position: fixed;
+			right: -100%;
+			top: 0;
+			bottom: 0;
+			z-index: 5;
+			flex: unset;
+			flex-direction: column;
+			justify-content: unset;
+			margin: unset;
+			padding: 50px 30px;
+			background: #fff;
+			transition: var(--anim4);
+			&.js-open {
+				right: 0;
+			}
+		}
+	}
+}
+
+.menu {
+	display: flex;
+
+	&__item {
+		position: relative;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		&:hover {
+			&::after {
+				transform: rotateX(180deg);
+			}
+
+			.submenu {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	@include respond-to(tablet) {
+		flex: unset;
+		flex-direction: column;
+	}
+}
+
+//* nav width submenu ----------------------------------
+
+.has-submenu {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	&::after {
+		content: "";
+		display: block;
+		margin-left: 10px;
+		width: 10px;
+		height: 10px;
+		background: green;
+		transition: var(--anim2);
+	}
+}
+
+.submenu {
+	position: absolute;
+	top: 100%;
+	min-width: max-content;
+	opacity: 0;
+	visibility: hidden;
+	transition: var(--anim1);
+}
+
+//*------------------------------------------------------

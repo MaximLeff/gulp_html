@@ -1,0 +1,61 @@
+// .btn--burger {
+// 	display: none;
+// 	margin-left: auto;
+
+// 	@include respond-to(tablet) {
+// 		--line-offset: 2px;
+// 		--color: #000;
+// 		--color-active: var(--color-first);
+
+// 		position: relative;
+// 		z-index: 15;
+// 		display: flex;
+// 		width: 30px;
+// 		height: 20px;
+// 		cursor: pointer;
+
+// 		span {
+// 			position: absolute;
+// 			display: block;
+// 			margin-bottom: 2px;
+// 			width: 100%;
+// 			height: 2px;
+// 			background: var(--color);
+// 			transition: 0.4s;
+
+// 			&:nth-child(1) {
+// 				top: 0;
+// 			}
+
+// 			&:nth-child(2) {
+// 				top: 50%;
+// 				transform: translateY(-50%);
+// 			}
+
+// 			&:nth-child(3) {
+// 				top: 100%;
+// 				transform: translateY(-100%);
+// 			}
+// 		}
+
+// 		&.js-active {
+// 			span {
+// 				top: 50%;
+// 				background: var(--color-active);
+// 				transform: translateY(-50%);
+
+// 				&:nth-child(1) {
+// 					transform: translateY(-50%) rotate(45deg);
+// 				}
+
+// 				&:nth-child(2) {
+// 					opacity: 0;
+// 				}
+
+// 				&:nth-child(3) {
+// 					transform: translateY(-50%) rotate(-45deg);
+// 				}
+// 			}
+// 		}
+// 	}
+// }

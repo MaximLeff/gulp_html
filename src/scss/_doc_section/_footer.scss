@@ -1,0 +1,65 @@
+.footer {
+	&__wrapper {
+		display: grid;
+		grid-template-areas: "logo nav tel mail socials";
+
+		@include respond-to(tablet) {
+			grid-template-areas:
+				"logo nav tel"
+				"logo nav mail"
+				"logo nav socials";
+		}
+
+		@include respond-to(mobi) {
+			grid-template-areas:
+				"logo"
+				"nav"
+				"tel"
+				"mail"
+				"socials";
+		}
+	}
+
+	&__logo {
+		grid-area: logo;
+	}
+
+	&__nav {
+		grid-area: nav;
+	}
+
+	&__tel {
+		grid-area: tel;
+	}
+
+	&__mail {
+		grid-area: mail;
+	}
+
+	&__social {
+		ul {
+			display: flex;
+			align-items: center;
+		}
+
+		li {
+			font-size: 0;
+
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+		}
+
+		a {
+			&:hover img {
+				transform: scale(1.2) rotate(25deg);
+			}
+		}
+
+		img {
+			width: 30px;
+			height: 30px;
+			transition: var(--anim2);
+		}
+	}
+}
