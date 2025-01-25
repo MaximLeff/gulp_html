@@ -6,12 +6,14 @@
 }
 
 // цвет выделения
-// *::selection {
-// background: #ffb7b7; /* Safari */
-// }
-// *::-moz-selection {
-// background: #ffb7b7; /* Firefox */
-// }
+*::selection {
+	background: var(--color-first-light); /* Safari */
+	color: #fff;
+}
+*::-moz-selection {
+	background: var(--color-first-light); /* Firefox */
+	color: #fff;
+}
 
 
 // убрать выделение при нажатии

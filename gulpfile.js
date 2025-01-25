@@ -25,6 +25,7 @@ const path = {
 		img: `${source_folder}/img/**/*.{jpg,JPG,png,PNG,svg,webp}`,
 		imgSvg: `${source_folder}/img/**/*.svg`,
 		fonts: `${source_folder}/fonts/*.ttf`,
+		fontsWoff: `${source_folder}/fonts/*.{woff,woff2}`,
 	},
 	watch: {
 		html: `${source_folder}/html/**/*.html`,
@@ -268,6 +269,10 @@ function fonts() {
 		.pipe(ttf2woff2())
 		.pipe(dest(path.build.fonts));
 }
+function fontsWoff() {
+	return src(path.src.fontsWoff)
+		.pipe(dest(path.build.fonts));
+}
 
 // Слушать файлы
 function watchFiles() {
@@ -297,6 +302,7 @@ const build = gulp.series(clean, gulp.parallel(
 	// imagesSvg,
 	imagesWebp,
 	fonts,
+	fontsWoff,
 	cssLibsMove,
 	jsLibsMove,
 ), ready);
@@ -309,6 +315,7 @@ const prod = gulp.series(clean, gulp.parallel(
 	// imagesSvg,
 	imagesWebp,
 	fonts,
+	fontsWoff,
 	cssLibsMove,
 	jsLibsMove,
 ));
@@ -316,6 +323,7 @@ const prod = gulp.series(clean, gulp.parallel(
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fonts = fonts;
+exports.fontsWoff = fontsWoff;
 // exports.imagesSvg = imagesSvg;
 exports.imagesWebp = imagesWebp;
 exports.js = js;

@@ -1,29 +1,51 @@
 html {
-	font-family: "DMSans", sans-serif;
+	font-family: "Azbuka04", sans-serif;
 	font-size: 16px;
 	cursor: default;
 }
 
-h1 {
-	font-size: 4rem;
-}
+.title {
+	&-first {
+		// font-family: "BenguiatGothicCTT", sans-serif;
+		font-size: clamp(90px, 44.2857px + 4.4643vw, 130px);
+		color: var(--color-white);
 
-h2 {
-	font-size: 3rem;
-}
+		@include respond-to(tablet) {
+			font-size: clamp(50px, -14.8464px + 13.6519vw, 90px);
+		}
+	}
 
-h3 {
-	font-size: 2rem;
-}
+	&-second {
+		font-size: 35px;
+		color: var(--color-second);
+	}
 
-h4 {
-	font-size: 1rem;
+	&-third {
+		font-weight: 700;
+		font-size: clamp(80px, -60px + 10.9375vw, 150px);
+		line-height: 1;
+		color: var(--color-white);
+
+		@include respond-to(tablet) {
+			font-size: clamp(50px, 1.3652px + 10.2389vw, 80px);
+		}
+	}
+
+	&-fourth {
+		font-family: 'Avanti', sans-serif;
+		font-weight: 700;
+		font-size: 35px;
+	}
 }
 
 p {
-	font-size: 1rem;
+	font-size: 16px;
+	+ p {
+		margin-top: 10px;
+	}
 }
 
-b {
+b,
+strong {
 	font-weight: 700;
 }

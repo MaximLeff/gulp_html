@@ -1,3 +1,46 @@
 <section class="banner">
-	<h1>Banner</h1>
+	<div class="banner-slider swiper">
+		<div class="swiper-wrapper banner-slides">
+			<div class="swiper-slide banner-slide">
+				<div class="banner-img">
+					<img src="img/img_1.webp" alt="">
+				</div>
+				<div class="banner-content">
+					<div class="banner-content-first">
+						<div class="banner-title title-first">Спартак</div>
+						<div class="banner-subtitle">Арам Хачатурян </div>
+						@@include('../../components/button.html',{
+							'title': 'КУПИТИ КВИТКИ',
+							'class': 'btn btn-first',
+						})
+					</div>
+					<div class="banner-content-second">
+						<div class="banner-date-day">25/02</div>
+						<div class="banner-date-time">Четвер | 18:00</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide banner-slide">
+				<div class="banner-img">
+					<img src="img/img_2.webp" alt="">
+				</div>
+				<div class="banner-content">
+					<div class="banner-content-first">
+						<div class="banner-title title-first">Тисяча та одна ніч</div>
+						<div class="banner-subtitle">Жорж Бізе</div>
+						@@include('../../components/button.html',{
+							'title': 'КУПИТИ КВИТКИ',
+							'class': 'btn btn-first',
+						})
+					</div>
+					<div class="banner-content-second">
+						<div class="banner-date-day">25/02</div>
+						<div class="banner-date-time">Четвер | 18:00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		
+	</div>
 </section>

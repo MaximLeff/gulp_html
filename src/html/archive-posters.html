@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+@@include('_parts/_head.html')
+
+<body>
+	@@include('_parts/_header.html')
+
+	<main>
+		<section class="posters">
+			<div class="container">
+				<div class="posters-title">
+					<h2 class="title-fourth">Афіша</h2>
+					<a href="#">Архів подій</a>
+					@@include('components/button.html',{
+					'title': 'ДЕТАЛЬНІШЕ',
+					'class': 'btn btn-second',
+					})
+				</div>
+
+				<div class="posters-filters">Filters</div>
+			</div>
+		</section>
+
+		<section class="container">
+			<div class="posters-list">
+				<div class="posters-item card-third">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<span>
+								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-place">камерна сцена</div>
+							</span>
+							<span>
+								<div class="card-date">
+									<span>29</span>
+									<span>лютого</span>
+								</div>
+							</span>
+						</div>
+						<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
+						
+						<div class="card-bottom">
+							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-title">Спартак</div>
+							<div class="card-author">Арам Хачатурян</div>
+							<div class="card-duration">2 год 25 хв</div>
+						</div>
+					</div>
+				</div>
+				<div class="posters-item card-third">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<span>
+								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-place">камерна сцена</div>
+							</span>
+							<span>
+								<div class="card-date">
+									<span>29</span>
+									<span>лютого</span>
+								</div>
+							</span>
+						</div>
+						
+						<div class="card-bottom">
+							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-title">Спартак</div>
+							<div class="card-author">Арам Хачатурян</div>
+							<div class="card-duration">2 год 25 хв</div>
+						</div>
+					</div>
+				</div>
+				<div class="posters-item card-third">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<span>
+								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-place">камерна сцена</div>
+							</span>
+							<span>
+								<div class="card-date">
+									<span>29</span>
+									<span>лютого</span>
+								</div>
+							</span>
+						</div>
+						<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
+						
+						<div class="card-bottom">
+							<div class="card-tour tag-tour">Гастрольний тур: Німеччина</div>
+							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-title">Спартак</div>
+							<div class="card-author">Арам Хачатурян</div>
+							<div class="card-duration">2 год 25 хв</div>
+						</div>
+					</div>
+				</div>
+				<div class="posters-item card-third">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<span>
+								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-place">камерна сцена</div>
+							</span>
+							<span>
+								<div class="card-date">
+									<span>29</span>
+									<span>лютого</span>
+								</div>
+							</span>
+						</div>
+						<div class="card-info card-postponed">Перенесено з <br> 28 лютого | 18:00 | четвер</div>
+						<div class="card-bottom">
+							<div class="card-tour">Гастрольний тур: Німеччина</div>
+							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-title">Спартак</div>
+							<div class="card-author">Арам Хачатурян</div>
+							<div class="card-duration">2 год 25 хв</div>
+						</div>
+					</div>
+				</div>
+				<div class="posters-item card-third">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<span>
+								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-place">камерна сцена</div>
+							</span>
+							<span>
+								<div class="card-date">
+									<span>29</span>
+									<span>лютого</span>
+								</div>
+							</span>
+						</div>
+						<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
+						<div class="card-info card-postponed">Перенесено з <br> 28 лютого | 18:00 | четвер</div>
+						<div class="card-bottom">
+							<div class="card-tour">Гастрольний тур: Німеччина</div>
+							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-title">Спартак</div>
+							<div class="card-author">Арам Хачатурян</div>
+							<div class="card-duration">2 год 25 хв</div>
+						</div>
+					</div>
+				</div>
+				<div class="posters-item card-third card-canceled">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<span>
+								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-place">КАМЕРНА сцена</div>
+							</span>
+							<span>
+								<div class="card-date">
+									<span>29</span>
+									<span>лютого</span>
+								</div>
+							</span>
+						</div>
+						<div class="card-info card-canceled-text">ВІДМІНЕНО</div>
+						<div class="card-bottom">
+							<div class="card-tour">Гастрольний тур: Німеччина</div>
+							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-title">Спартак</div>
+							<div class="card-author">Арам Хачатурян</div>
+							<div class="card-duration">2 год 25 хв</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pagination">
+				<a href="#" class="pagination-btn pagination-btn-prev">
+					<svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="https://www.w3.org/2000/svg">
+						<path d="M8.08985 1.08187L1.56984 7.60187C0.799844 8.37187 0.799844 9.63187 1.56984 10.4019L8.08984 16.9219" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+						
+				</a>
+
+				<a href="#" class="pagination-btn">1</a>
+				<a href="#" class="pagination-btn">...</a>
+				<a href="#" class="pagination-btn">7</a>
+				<a href="#" class="pagination-btn">8</a>
+				<span class="pagination-btn pagination-btn-current">9</span>
+				<a href="#" class="pagination-btn">10</a>
+				<a href="#" class="pagination-btn">11</a>
+				<a href="#" class="pagination-btn">...</a>
+				<a href="#" class="pagination-btn">20</a>
+
+				<a href="#" class="pagination-btn pagination-btn-next">
+					<svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="https://www.w3.org/2000/svg">
+						<path d="M0.910156 16.9181L7.43016 10.3981C8.20016 9.62812 8.20016 8.36813 7.43016 7.59813L0.910156 1.07812" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+			</div>
+
+		</section>
+
+
+	</main>
+
+	@@include('_parts/_footer.html')
+</body>
+
+</html>

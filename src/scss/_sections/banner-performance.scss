@@ -1,0 +1,109 @@
+.banner-performance {
+	@include fullHeigh;
+
+	position: relative;
+	display: flex;
+	align-items: end;
+	color: var(--color-white);
+
+	&-background {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 0;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&-author {
+		margin-top: 25px;
+		font-size: 24px;
+	}
+
+	&-first {
+		flex: 1 0 50%;
+
+		@include respond-to(tablet) {
+			text-align: center;
+		}
+	}
+
+	&-content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: end;
+		width: 100%;
+		gap: 40px;
+	}
+
+	&-premiere {
+		margin-bottom: 40px;
+
+		@include respond-to(tablet) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.container {
+		position: relative;
+		z-index: 10;
+		padding: 48px;
+		width: 100%;
+
+		@include respond-to(tablet) {
+			padding: 20px;
+		}
+	}
+
+	&-detail {
+		span:nth-child(2) {
+			color: var(--color-first-light);
+		}
+	}
+
+	&-details {
+		display: flex;
+		flex-shrink: 0;
+		flex-direction: column;
+		margin-left: auto;
+		padding: 16px;
+		width: min(100%, 440px);
+		height: max-content;
+		font-family: "Avanti", sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		background: var(--color-dark-transparent);
+		gap: 12px;
+
+		.btn {
+			margin-top: 8px;
+			margin-right: -16px;
+			margin-bottom: -16px;
+			margin-left: auto;
+			font-weight: 400;
+
+			@include respond-to(tablet) {
+				margin: 10px auto 0;
+			}
+		}
+
+		@include respond-to(tablet) {
+			align-items: center;
+			margin: 0 auto;
+			font-size: 16px;
+			gap: 5px;
+		}
+	}
+
+	&-genre {
+		&-place {
+			margin-bottom: 48px;
+
+			@include respond-to(tablet) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

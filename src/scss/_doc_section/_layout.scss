@@ -1,27 +1,17 @@
 .container {
 	margin: 0 auto;
 	padding-right: 20px;
-	// padding-right: 1.25rem;
 	padding-left: 20px;
-	// padding-left: 1.25rem;
-	max-width: 1200px;
+	max-width: 1404px;
 }
 
-header {
-	flex: 0 0 auto;
-	background-color: #ccc;
-}
-
-.wrapper {
-	flex: 1 0 auto;
-}
-
+header,
 footer {
 	flex: 0 0 auto;
-	background-color: #eee;
 }
 
-html {
+html,
+body {
 	height: 100%;
 }
 
@@ -30,4 +20,25 @@ body {
 	flex: 1 0 auto;
 	flex-direction: column;
 	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+section {
+	& + section {
+		margin-top: 80px;
+	}
+
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 55px;
+
+		@include respond-to(mobile) {
+			margin-bottom: 30px;
+		}
+	}
 }

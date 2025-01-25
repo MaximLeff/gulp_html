@@ -1,0 +1,17 @@
+.posters {
+	&-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 34px;
+
+		[class^="title"] {
+			margin-right: auto;
+		}
+	}
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 15px 10px;
+	}
+}

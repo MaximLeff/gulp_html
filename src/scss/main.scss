@@ -9,7 +9,7 @@
 // @import "_plugins/_jquery.scrollbar";
 // @import "_plugins/_magnific-popup";
 // @import "_plugins/_select2";
-// @import "_plugins/_swiper";
+@import "_plugins/_swiper";
 
 // End plugins ------------------------------------
 
@@ -25,3 +25,15 @@
 @import "_doc_section/_global";
 @import "_doc_section/_header";
 @import "_doc_section/_footer";
+
+@import "_sections/banner";
+
+@import "_sections/banner-performance";
+@import "_sections/info-performance";
+@import "_sections/tabs-performance";
+@import "_sections/dates-performance";
+@import "_sections/buy-tooltip";
+
+@import "_sections/poster";
+@import "_sections/posters";
+
