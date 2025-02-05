@@ -49,32 +49,41 @@ jQuery(document).ready(function ($) {
 		},
 	});
 
-	$('.tab-head-item').click(function () {
-		if (!$(this).hasClass('active')) {
-			let index = $(this).index();
-			$('.tab-head-item').removeClass('active');
-			$(this).addClass('active');
+	// Page performance
+	if ($('.page-performance').length > 0) {
+		$('.tab-head-item').click(function () {
+			if (!$(this).hasClass('active')) {
+				let index = $(this).index();
+				console.log(index);
+				
+				$('.tab-head-item').removeClass('active');
+				$(this).addClass('active');
 
-			$('.tab-content').fadeOut(400, function () {
+				$('.tab-content').fadeOut(400);
 				$('.tab-content').eq(index).fadeIn(400);
-			});
-		}
+			}
+		});
+
+		let heightBuyTooltip = $('.buy-tooltip')[0].scrollHeight + 20;
+
+		$(document).scroll(function () {
+			let height = $(window).scrollTop();
+
+			let heightBody = $('body')[0].scrollHeight;
+			let heightFooter = $('.footer')[0].scrollHeight;
+			let positionFooter = heightBody - heightFooter;
+			let windowHeight = $(window).scrollTop() + $(window).height();
+
+			if (height > 40 && windowHeight < positionFooter) {
+				$('.buy-tooltip').addClass('show').css('max-height', heightBuyTooltip + 'px');
+			} else {
+				$('.buy-tooltip').removeClass('show').css('max-height', 0);
+			}
+		});
+	}
+
+	$('select').select2({
+		minimumResultsForSearch: Infinity,
+		dropdownParent: $('main'),
 	});
-
-	let heightBuyTooltip = $('.buy-tooltip')[0].scrollHeight + 20;
-	
-	$(document).scroll(function () {
-		let height = $(window).scrollTop();
-		
-		let heightBody = $('body')[0].scrollHeight;
-		let heightFooter = $('.footer')[0].scrollHeight;
-		let positionFooter = heightBody - heightFooter;
-		let windowHeight = $(window).scrollTop() + $(window).height();
-
-		if (height > 40 && windowHeight < positionFooter) {
-			$('.buy-tooltip').addClass('show').css('max-height', heightBuyTooltip + 'px');
-		} else {
-			$('.buy-tooltip').removeClass('show').css('max-height', 0);
-		}
-	})
-})
+});

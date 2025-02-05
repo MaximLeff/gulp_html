@@ -67,10 +67,9 @@
 			padding-bottom: 80px;
 
 			p {
-				max-width: 400px;
 				font-size: 20px;
 				line-height: 1.1;
-				text-align: left;
+				text-align: justify;
 
 				&::first-letter {
 					font-size: 70px;
@@ -104,7 +103,7 @@
 				display: grid;
 				justify-content: center;
 				grid-template-columns: 1fr max-content;
-				gap: 30px;
+				gap: 35px;
 
 				img {
 					position: sticky;
@@ -188,7 +187,7 @@
 			&-title {
 				margin-bottom: 40px;
 				padding-right: 50px;
-				font-family: "Avanti", sans-serif;
+				font-family: "Avantgard", sans-serif;
 				font-weight: 700;
 				font-size: 31px;
 			}

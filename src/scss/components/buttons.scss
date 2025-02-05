@@ -3,6 +3,8 @@
 	border: unset;
 	width: max-content;
 	font-family: "Azbuka04", sans-serif;
+	background: unset;
+	cursor: pointer;
 
 	&-first {
 		--anim-offset: 8px;
@@ -18,7 +20,6 @@
 		transition: var(--anim2);
 		gap: 10px;
 
-		//! ANIMATION
 		span {
 			padding-right: var(--anim-offset);
 			padding-left: var(--anim-offset);
@@ -28,8 +29,8 @@
 		svg {
 			position: absolute;
 			right: calc(var(--anim-offset) * 2);
+			transform: translate(0, 0) scale(0);
 			transform-origin: right;
-			transform: translate(0px, 0) scale(0);
 			transition: var(--anim2);
 
 			path {
@@ -124,5 +125,49 @@
 				display: none;
 			}
 		}
+	}
+
+	&-calendar {
+		transition: background var(--anim2);
+		span {
+			padding: unset;
+			@include respond-to(tablet) {
+				display: none;
+			}
+		}
+		svg {
+			position: relative;
+			transform: unset;
+			right: unset;
+			path {
+				transition: var(--anim2);
+			}
+			display: block !important;
+		}
+		@include respond-to(tablet) {
+			padding: 7px;
+		}
+		@media (hover: hover) {
+			&:hover {
+				background: var(--color-second);
+				border-color: var(--color-second);
+				color: var(--color-white);
+				span {
+					padding-right: unset;
+					
+				}
+				svg {
+					transform: unset;
+					path {
+						stroke: var(--color-white);
+					}
+				}
+			}
+		}
+	}
+
+	&-archive {
+		color: var(--color-gray-light);
+		font-weight: 700;
 	}
 }

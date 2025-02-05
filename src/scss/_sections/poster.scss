@@ -167,8 +167,8 @@
 
 		@include respond-to(tablet) {
 			grid-template-columns: 1fr;
-			margin-right: -30px;
-			margin-left: -30px;
+			margin-right: -20px;
+			margin-left: -20px;
 			gap: 15px;
 		}
 	}

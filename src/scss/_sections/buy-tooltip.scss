@@ -50,7 +50,7 @@
 	}
 
 	&-title {
-		font-family: "Avanti", sans-serif;
+		font-family: "Avantgard", sans-serif;
 		font-weight: 700;
 		font-size: var(--fluid-18-50);
 	}
@@ -59,6 +59,12 @@
 		overflow: hidden;
 		max-height: 0;
 		transition: var(--anim4);
+
+		span:not(:last-child)::after {
+			content: "|";
+			display: inline-block;
+			padding-left: 5px;
+		}
 	}
 
 	&-date {
@@ -66,7 +72,7 @@
 	}
 
 	&-time {
-		font-family: "Avanti";
+		font-family: "Avantgard";
 		font-weight: 700;
 		font-size: var(--fluid-14-16);
 	}

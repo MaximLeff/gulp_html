@@ -15,10 +15,15 @@
 
 	--b-radius-first: 5px;
 
+	--shadow-first: 0 2px 5px 0px #00000020;
+
 	--anim4: 0.4s ease-in-out;
 	--anim3: 0.3s ease-in-out;
 	--anim2: 0.2s ease-in-out;
 	--anim1: 0.1s ease;
+
+	--bezier-first: cubic-bezier(0, 0.83, 0.2, 0.98);
+	--bezier-second: cubic-bezier(.64,0,.23,.99);
 
 
 	/* @link https://utopia.fyi/clamp/calculator?a=375,1440,16—48 */

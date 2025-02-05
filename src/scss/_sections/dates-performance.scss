@@ -1,13 +1,9 @@
 .dates-performance {
 	--padding: 30px;
 
-	@include respond-to(mobile) {
-		margin-top: 20px;
-	}
-
 	&-title {
 		margin-bottom: 25px;
-		font-family: "Avanti", sans-serif;
+		font-family: "Avantgard", sans-serif;
 		font-weight: 700;
 		font-size: 20px;
 		color: var(--color-second);
@@ -27,13 +23,14 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding: 20px;
+		padding: 25px 20px;
 		background: var(--color-light);
 		transition: var(--anim1);
 
 		&.active {
 			color: var(--color-white);
 			background: var(--color-second);
+			pointer-events: none;
 
 			.dates-performance {
 				&-date {
@@ -42,6 +39,10 @@
 
 				&-group {
 					border-color: var(--color-white);
+				}
+
+				&-tooltip {
+					background: var(--color-first);
 				}
 			}
 		}
@@ -66,6 +67,20 @@
 				}
 			}
 		}
+	}
+
+	&-transfer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 3px;
+		font-family: "Avantgard";
+		font-weight: 400;
+		font-size: 12px;
+		text-align: center;
+		color: var(--color-white);
+		background: var(--color-first-light);
 	}
 
 	&-group {
@@ -132,6 +147,10 @@
 				font-size: 16px;
 			}
 		}
+	}
+
+	@include respond-to(mobile) {
+		margin-top: 20px;
 	}
 
 	@include respond-to(mobile) {

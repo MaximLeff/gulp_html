@@ -28,7 +28,7 @@
 				</div>
 			</div>
 
-			<a href="#" class="header-logo">
+			<a href="index.html" class="header-logo">
 				<img src="img/main_logo_1.webp" alt="">
 			</a>
 
@@ -48,7 +48,7 @@
 		<div class="header-bottom">
 			<nav>
 				<ul>
-					<li><a href="#">Афіша</a></li>
+					<li><a href="archive-posters.html">Афіша</a></li>
 					<li><a href="#">Репертуар</a></li>
 					<li><a href="#">Проведення заходів</a></li>
 					<li>
@@ -97,21 +97,86 @@
 	</div>
 </header>
 
-	<main>
+	<main class="page-archive-posters">
 		<section class="posters">
 			<div class="container">
 				<div class="posters-title">
 					<h2 class="title-fourth">Афіша</h2>
-					<a href="#">Архів подій</a>
-					<a href="#" class="btn btn-second">
-	<span>ДЕТАЛЬНІШЕ</span>
-	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+					<a href="#" class="btn-archive">Архів подій</a>
+					<a href="#" class="btn btn-second btn-calendar">
+	<span>КАЛЕНДАР</span>
+	<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_4901_16823)">
+		<path d="M8.31641 6V1M18.3164 6V1M22.3164 17V21.5H4.31641V18.5M22.1794 8.5H4.16841M1.31641 18.25V18.5H19.2164L19.3664 18.25L19.6004 17.759C21.3886 14.0007 22.3164 9.89102 22.3164 5.729V3.5H4.31641V5.628C4.31645 9.82218 3.37425 13.9628 1.55941 17.744L1.31641 18.25Z" stroke="#1D1D1D"/>
+		</g>
+		<defs>
+		<clipPath id="clip0_4901_16823">
+		<rect width="24" height="24" fill="white" transform="translate(0.816406)"/>
+		</clipPath>
+		</defs>
 	</svg>
+		
 </a>
 				</div>
 
-				<div class="posters-filters">Filters</div>
+				<form class="repertoire-filters">
+					<div class="posters-filters-top">
+						<div class="posters-filters-search search-field">
+							<i></i>
+							<input type="text" placeholder="Пошук за назвою, композитором">
+							<button>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="posters-filters-bottom">
+						<div class="posters-filters-bottom-title">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.9328 15.8924C11.9328 16.4008 11.5995 17.0674 11.1745 17.3258L9.99948 18.0841C8.90781 18.7591 7.39114 18.0008 7.39114 16.6508V12.1924C7.39114 11.6008 7.05781 10.8424 6.71615 10.4258L3.51612 7.05911C3.09112 6.63411 2.75781 5.88412 2.75781 5.37578V3.44244C2.75781 2.43411 3.51616 1.67578 4.44116 1.67578H15.5578C16.4828 1.67578 17.2411 2.43411 17.2411 3.35911V5.20911C17.2411 5.88411 16.8161 6.72578 16.3995 7.14245" stroke="#800000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M13.3893 13.7669C14.8621 13.7669 16.056 12.573 16.056 11.1003C16.056 9.62751 14.8621 8.43359 13.3893 8.43359C11.9166 8.43359 10.7227 9.62751 10.7227 11.1003C10.7227 12.573 11.9166 13.7669 13.3893 13.7669Z" stroke="#800000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16.556 14.2669L15.7227 13.4336" stroke="#800000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+								
+							<span>Фільтрувати за:</span>
+						</div>
+						<div class="posters-filters-items">
+							<div class="posters-filters-time posters-filters-item" data="select">
+								<div class="posters-filters-title">Час вистави</div>
+								<select name="" id="">
+									<option value="" disabled>Обрати</option>
+									<option value="1">test</option>
+									<option value="1">test</option>
+								</select>
+							</div>
+							<div class="posters-filters-genre posters-filters-item" data="select">
+								<div class="posters-filters-title">Жанр</div>
+								<select name="" id="">
+									<option value="" disabled>Обрати</option>
+									<option value="1">test</option>
+									<option value="1">test</option>
+								</select>
+							</div>
+							<div class="posters-filters-scene posters-filters-item" data="select">
+								<div class="posters-filters-title">Сцена</div>
+								<select name="" id="">
+									<option value="" disabled>Обрати</option>
+									<option value="1">test</option>
+									<option value="1">test</option>
+								</select>
+							</div>
+							<div class="posters-filters-accept">
+								<button class="btn btn-second">
+									<span>ЗАСТОСУВАТИ</span>
+									<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
 		</section>
 
@@ -123,162 +188,327 @@
 					</div>
 					<div class="card-content">
 						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
 							<span>
-								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-time-day">18:00 | четвер</div>
 								<div class="card-place">камерна сцена</div>
 							</span>
-							<span>
-								<div class="card-date">
-									<span>29</span>
-									<span>лютого</span>
-								</div>
-							</span>
 						</div>
-						<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
 						
 						<div class="card-bottom">
-							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
 							<div class="card-title">Спартак</div>
-							<div class="card-author">Арам Хачатурян</div>
-							<div class="card-duration">2 год 25 хв</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
 				</div>
+
+
 				<div class="posters-item card-third">
 					<div class="card-img">
 						<img src="img/img_1.webp" alt="">
 					</div>
 					<div class="card-content">
 						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
 							<span>
-								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-time-day">18:00 | четвер</div>
 								<div class="card-place">камерна сцена</div>
-							</span>
-							<span>
-								<div class="card-date">
-									<span>29</span>
-									<span>лютого</span>
-								</div>
 							</span>
 						</div>
 						
 						<div class="card-bottom">
-							<div class="card-time-day">18:00 | четвер</div>
 							<div class="card-title">Спартак</div>
-							<div class="card-author">Арам Хачатурян</div>
-							<div class="card-duration">2 год 25 хв</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
 				</div>
+
+
 				<div class="posters-item card-third">
 					<div class="card-img">
 						<img src="img/img_1.webp" alt="">
 					</div>
 					<div class="card-content">
 						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
 							<span>
-								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-time-day">18:00 | четвер</div>
 								<div class="card-place">камерна сцена</div>
 							</span>
-							<span>
-								<div class="card-date">
-									<span>29</span>
-									<span>лютого</span>
-								</div>
-							</span>
 						</div>
-						<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
 						
 						<div class="card-bottom">
 							<div class="card-tour tag-tour">Гастрольний тур: Німеччина</div>
-							<div class="card-time-day">18:00 | четвер</div>
 							<div class="card-title">Спартак</div>
-							<div class="card-author">Арам Хачатурян</div>
-							<div class="card-duration">2 год 25 хв</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
 				</div>
+
 				<div class="posters-item card-third">
 					<div class="card-img">
 						<img src="img/img_1.webp" alt="">
 					</div>
 					<div class="card-content">
 						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
 							<span>
-								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-time-day">18:00 | четвер</div>
 								<div class="card-place">камерна сцена</div>
 							</span>
-							<span>
-								<div class="card-date">
-									<span>29</span>
-									<span>лютого</span>
-								</div>
-							</span>
 						</div>
-						<div class="card-info card-postponed">Перенесено з <br> 28 лютого | 18:00 | четвер</div>
+						
 						<div class="card-bottom">
-							<div class="card-tour">Гастрольний тур: Німеччина</div>
-							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
+							<div class="card-tour tag-tour">Гастрольний тур: Німеччина</div>
 							<div class="card-title">Спартак</div>
-							<div class="card-author">Арам Хачатурян</div>
-							<div class="card-duration">2 год 25 хв</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
 				</div>
+
+
 				<div class="posters-item card-third">
 					<div class="card-img">
 						<img src="img/img_1.webp" alt="">
 					</div>
 					<div class="card-content">
 						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
 							<span>
-								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
+								<div class="card-time-day">18:00 | четвер</div>
 								<div class="card-place">камерна сцена</div>
 							</span>
-							<span>
-								<div class="card-date">
-									<span>29</span>
-									<span>лютого</span>
-								</div>
-							</span>
 						</div>
-						<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
-						<div class="card-info card-postponed">Перенесено з <br> 28 лютого | 18:00 | четвер</div>
+
+						<div class="card-info card-postponed">Перенесено з 28 лютого</div>
 						<div class="card-bottom">
-							<div class="card-tour">Гастрольний тур: Німеччина</div>
-							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
+							<div class="card-tour tag-tour">Гастрольний тур: Німеччина</div>
 							<div class="card-title">Спартак</div>
-							<div class="card-author">Арам Хачатурян</div>
-							<div class="card-duration">2 год 25 хв</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
 				</div>
+
+				<div class="posters-item card-third">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
+							<span>
+								<div class="card-time-day">18:00 | четвер</div>
+								<div class="card-place">камерна сцена</div>
+							</span>
+						</div>
+
+						<div class="card-info card-postponed">Перенесено з 28 лютого</div>
+						<div class="card-bottom">
+							<div class="card-title">Спартак</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
+				</div>
+
+
 				<div class="posters-item card-third card-canceled">
 					<div class="card-img">
 						<img src="img/img_1.webp" alt="">
 					</div>
 					<div class="card-content">
 						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
 							<span>
-								<div class="card-description">БАЛЕТ НА 2 ДІЇ</div>
-								<div class="card-place">КАМЕРНА сцена</div>
-							</span>
-							<span>
-								<div class="card-date">
-									<span>29</span>
-									<span>лютого</span>
-								</div>
+								<div class="card-time-day">18:00 | четвер</div>
+								<div class="card-place">камерна сцена</div>
 							</span>
 						</div>
+
 						<div class="card-info card-canceled-text">ВІДМІНЕНО</div>
 						<div class="card-bottom">
-							<div class="card-tour">Гастрольний тур: Німеччина</div>
-							<div class="card-time-day">18:00 | четвер</div>
+							<div class="card-premiere tag-first">ПРЕМ’ЄРА</div>
+							<div class="card-tour tag-tour">Гастрольний тур: Німеччина</div>
 							<div class="card-title">Спартак</div>
-							<div class="card-author">Арам Хачатурян</div>
-							<div class="card-duration">2 год 25 хв</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
+				</div>
+
+
+				<div class="posters-item card-third card-canceled">
+					<div class="card-img">
+						<img src="img/img_1.webp" alt="">
+					</div>
+					<div class="card-content">
+						<div class="card-top">
+							<div class="card-date">
+								<span>29</span>
+								<span>лютого</span>
+							</div>
+
+							<span>
+								<div class="card-time-day">18:00 | четвер</div>
+								<div class="card-place">камерна сцена</div>
+							</span>
+						</div>
+
+						<div class="card-info card-canceled-text">ВІДМІНЕНО</div>
+						<div class="card-bottom">
+							<div class="card-title">Спартак</div>
+							<div class="card-author-description">
+								<span class="card-author">Арам Хачатурян</span>
+								<span class="card-description">БАЛЕТ НА 2 ДІЇ</span>
+							</div>
+							<div class="card-duration">
+								<span>2 год 25 хв</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#fff"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn-first">
+	<span>КУПИТИ КВИТКИ</span>
+	<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" fill="#1D1D1D"/>
+	</svg>
+</a>
 				</div>
 			</div>
 
@@ -287,17 +517,14 @@
 					<svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="https://www.w3.org/2000/svg">
 						<path d="M8.08985 1.08187L1.56984 7.60187C0.799844 8.37187 0.799844 9.63187 1.56984 10.4019L8.08984 16.9219" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-						
 				</a>
 
 				<a href="#" class="pagination-btn">1</a>
-				<a href="#" class="pagination-btn">...</a>
-				<a href="#" class="pagination-btn">7</a>
+				<!-- <a href="#" class="pagination-btn">...</a> -->
 				<a href="#" class="pagination-btn">8</a>
 				<span class="pagination-btn pagination-btn-current">9</span>
 				<a href="#" class="pagination-btn">10</a>
-				<a href="#" class="pagination-btn">11</a>
-				<a href="#" class="pagination-btn">...</a>
+				<!-- <a href="#" class="pagination-btn">...</a> -->
 				<a href="#" class="pagination-btn">20</a>
 
 				<a href="#" class="pagination-btn pagination-btn-next">
@@ -314,12 +541,123 @@
 
 	<footer class="footer">
 	<div class="container">
-		<h2>Footer</h2>
+		<div class="footer-top">
+			<a href="#" class="footer-logo">
+				<img src="img/main_logo_1.webp" alt="logo">
+			</a>
+			<div class="footer-menu">
+				<div class="footer-menu-group footer-menu-first">
+					<ul>
+						<li>
+							<a href="#">Гастролі</a>
+						</li>
+						<li>
+							<a href="#">Проведення заходів</a>
+						</li>
+						<li>
+							<a href="#">Екскурсії</a>
+						</li>
+						<li>
+							<a href="#">Театр</a>
+						</li>
+						<li>
+							<a href="#">Новини</a>
+						</li>
+						<li>
+							<a href="#">Контакти</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-menu-group footer-menu-second">
+					<ul>
+						<li>
+							<a href="#">Репертуар</a>
+						</li>
+						<li>
+							<a href="#">Афіша</a>
+						</li>
+						<li>
+							<a href="#">Архів подій</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-socials">
+				<div class="footer-socials-group">
+					<div class="footer-socials-title">Наші соцмережі</div>
+					<ul class="footer-socials-list">
+						<li><a href="#"><img src="img/i_facebook.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/i_instagram.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/i_youtube.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer-socials-group">
+					<div class="footer-socials-title">Контакти театральних кас:</div>
+					<ul>
+						<li>
+							<a href="tel:+(057) 700 39 87">(057) 700 39 87</a>
+						</li>
+						<li>
+							<a href="tel:+(057) 700 40 42">(057) 700 40 42</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-sponsors">
+			<div class="footer-sponsors-group">
+				<div class="footer-sponsors-group-title">Генеральні спонсори</div>
+				<ul>
+					<li><img src="img/logos/vostok.webp" alt=""></li>
+					<li><img src="img/logos/ananta.webp" alt=""></li>
+					<li><img src="img/logos/Paramonov_Fond_logo.webp" alt=""></li>
+				</ul>
+			</div>
+			<div class="footer-sponsors-group">
+				<div class="footer-sponsors-group-title">Генеральний партнер</div>
+				<ul>
+					<li><img src="img/logos/sunoil 1.webp" alt=""></li>
+				</ul>
+			</div>
+			<div class="footer-sponsors-group">
+				<div class="footer-sponsors-group-title">Радіо-партнер</div>
+				<ul>
+					<li><img src="img/logos/logo_RETRO_FM_90_4FM_Kharkov 1.webp" alt=""></li>
+				</ul>
+			</div>
+			<div class="footer-sponsors-group">
+				<div class="footer-sponsors-group-title">Генеральний інформаційний партнер</div>
+				<ul>
+					<li><img src="img/logos/kulinichi 1.webp" alt=""></li>
+				</ul>
+			</div>
+			<div class="footer-sponsors-group">
+				<div class="footer-sponsors-group-title">Інформаційні партнери</div>
+				<ul>
+					<li><img src="img/logos/ananta (1).webp" alt=""></li>
+					<li><img src="img/logos/- -8-1.webp" alt=""></li>
+					<li><img src="img/logos/-vg---.webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (1).webp" alt=""></li>
+					<li><img src="img/logos/obozrevatel_  1.webp" alt=""></li>
+					<li><img src="img/logos/logo_kudagou_2014.webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (2).webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (3).webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (4).webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (5).webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (6).webp" alt=""></li>
+					<li><img src="img/logos/logo19hotel_kvadrat_BIG_FONT_out-white.webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (7).webp" alt=""></li>
+					<li><img src="img/logos/- -8-1 (8).webp" alt=""></li>
+					<li><img src="img/logos/Gorod-X_logo.webp" alt=""></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </footer>
 
 <script src="js/libs/jquery-3.6.0.min.js"></script>
 <script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/select2.full.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

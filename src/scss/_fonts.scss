@@ -32,9 +32,12 @@ html {
 	}
 
 	&-fourth {
-		font-family: 'Avanti', sans-serif;
+		font-family: 'Avantgard', sans-serif;
 		font-weight: 700;
 		font-size: 35px;
+		@include respond-to(mobile) {
+			font-size: 22px;
+		}
 	}
 }
 
