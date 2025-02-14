@@ -1,0 +1,54 @@
+* {
+	--c-first: #C69A44;
+	--c-first-light:#E2C283;
+	--c-second: #800000;
+	--c-second-hover: hsl(0deg 100% 20%);
+	--c-white: #fff;
+	--shadow-first: 0 2px 5px 0px #00000020;
+	--anim4: 0.4s ease-in-out;
+	--anim3: 0.3s ease-in-out;
+	--anim2: 0.2s ease-in-out;
+	--anim1: 0.1s ease;
+	--bezier-first: cubic-bezier(0, 0.83, 0.2, 0.98);
+	--bezier-second: cubic-bezier(.64,0,.23,.99);
+
+}
+
+$laptop-xl: 1440px;
+$laptop: 1280px;
+$tablet-xl: 1024px;
+$tablet: 768px;
+$mobile: 475px;
+
+@mixin respond-to($media) {
+	// > $mobile
+	@if $media == mobile {
+		@media screen and (max-width: $mobile) {
+			@content;
+		}
+
+	// > $tablet
+	} @else if $media == tablet-xl {
+		@media screen and (max-width: $tablet-xl) {
+			@content;
+		}
+
+	// > $tablet
+	} @else if $media == tablet {
+		@media screen and (max-width: $tablet) {
+			@content;
+		}
+
+	// > $laptop
+	} @else if $media == laptop {
+		@media screen and (max-width: $laptop) {
+			@content;
+		}
+
+	// > $laptop-xl
+	} @else if $media == laptop-xl {
+		@media screen and (max-width: $laptop-xl) {
+			@content;
+		}
+	}
+}

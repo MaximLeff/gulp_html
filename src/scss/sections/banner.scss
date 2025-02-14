@@ -1,0 +1,10 @@
+.banner2 {
+	background: #ededed;
+	height: 400px;
+}
+
+.banner {
+	&__test {
+		font-size: 10px;
+	}
+}

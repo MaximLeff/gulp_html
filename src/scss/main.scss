@@ -1,43 +1,18 @@
-@import "_reset";
-@import "_variables";
-@import "_fonts";
+@import "parts/reset";
+@import "parts/variables";
+@import "parts/fonts";
 
 // Plugins section --------------------------------
-
 // @import "_plugins/_";
 // @import "_plugins/_aos";
 // @import "_plugins/_jquery.scrollbar";
 // @import "_plugins/_magnific-popup";
-@import "_plugins/_select2";
-@import "_plugins/_swiper";
-
+// @import url("_plugins/_select2");
+// @import url("_plugins/_swiper");
 // End plugins ------------------------------------
 
-// Mixins
-// @import "_doc_section/_mixins/_burger";
-@import "_allMixins";
-
-// doc_section
-@import "components/buttons";
-
-
-@import "_doc_section/_layout";
-@import "_doc_section/_global";
-@import "_doc_section/_header";
-@import "_doc_section/_footer";
-
-@import "_sections/banner";
-
-@import "_sections/banner-performance";
-@import "_sections/info-performance";
-
-@import "_sections/tabs-performance";
-@import "_sections/active-persons";
-
-@import "_sections/dates-performance";
-@import "_sections/buy-tooltip";
-
-@import "_sections/poster";
-@import "_sections/posters";
-@import "_sections/repertoire";
-
+@import "parts/layout";
+@import "parts/header";
+@import "parts/footer";
+@import "components/_components";
+@import "sections/_sections";

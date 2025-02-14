@@ -1,0 +1,33 @@
+.container {
+	margin: 0 auto;
+	max-width: 1480px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+header,
+footer {
+	flex: 0 0 auto;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+section {
+	& + section {
+		margin-top: 80px;
+	}
+}
