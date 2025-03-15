@@ -230,10 +230,6 @@ section + section {
   background: #ccc;
 }
 
-.btn {
-  background: unset;
-}
-
 .banner2 {
   background: #ededed;
   height: 400px;
